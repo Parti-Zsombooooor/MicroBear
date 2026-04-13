@@ -1,0 +1,4 @@
+Ez az oldal egy electronikai webshop lesz!
+A főoldalon láthatjuk a navbar igen fejlett és menő.
+Van még nekünk egy sidebarunk ahol szűrni lehet a megjelenítés!!!
+A termékek (kártyák) responzívan jellenek meg az oldla közepén;
