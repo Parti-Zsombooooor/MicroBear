@@ -1,0 +1,77 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #212830;
+    font-family: "Roboto", sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 143px;
+    background-color: #151B23;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 10px #7b7b7b80;
+}
+
+.navFelso{
+    width: 100%;
+    height: 90px;
+
+}
+
+.navVonal{
+    width: 100%;
+    height: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navVonal div{
+    width: 95%;
+    height: 100%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.navAlso{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navAlso a{
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 140px;
+    background-color: #2a313c;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius:  100px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: 1px soliod #1eb9cb; 
+    transition: all 0.3s ease;
+    text-decoration: none;
+   
+}
+
+.navAlso a:hover{
+    background-color: #1eb9cb;
+    filter: drop-shadow(0px 5px 10px #95959580);
+    width: 160px;
+    font-weight: 600;
+}
+
+.navKategoriaDropDownDiv{
+    position: absolute;
+    width: 180px;
+    height: 40px;
+    left: 30px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
