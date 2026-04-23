@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,93 @@
     <link rel="stylesheet" href="../css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Playwrite+NZ+Basic:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Playwrite+NZ+Basic:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <div class="navFelso">
 
         </div>
-        <div class="navVonal"><div></div></div>
+        <div class="navVonal">
+            <div></div>
+        </div>
         <div class="navAlso">
-            <a class="navKategoriaDropDownDiv" href="">Kategória <img class="navIcons" src="../imgs/icons/downarrow.svg" alt=""></a>
+
+            <button onclick="Lenyomva()" class="navKategoriaDropDownDiv">Kategória <img id="navIcon" class="navIcons"
+                    src="../imgs/icons/downarrow.svg" alt=""></button>
+
+
+
+
             <a class="navA" href="">Főoldal</a>
             <a class="navA" href="">Rólunk</a>
             <a class="navA" href="">AKCIÓK!</a>
             <a class="navA" href="">Kategória</a>
             <a class="navA" href="">Kapcsolat</a>
-        </div>  
+        </div>
+
     </nav>
+    <div id="KategoriaDIV" class="KategoriaDIV">
+
+    </div>
+
+    <script>
+        let toggle = false;
+
+        const fadeIn = [
+            { opacity: 0 },
+            { opacity: 1 }
+        ];
+        const fadeOut = [
+            { opacity: 1 },
+            { opacity: 0 }
+        ];
+
+        const roateIn = [
+            {rotate : '0deg'},
+            {rotate : '180deg'}
+        ];
+        const roateOut = [
+            {rotate : '180deg'},
+            {rotate : '0deg'}
+        ];
+        
+
+        const KategoriaDIV = document.getElementById("KategoriaDIV");
+        const navIcon = document.getElementById("navIcon");
+
+        function Lenyomva() {
+            if (!toggle) {
+                KategoriaDIV.style.display = "block";
+                KategoriaDIV.animate(fadeIn, { duration: 100 });
+
+                navIcon.animate(roateIn, { duration: 100 }).onfinish = () => {
+                    navIcon.style.transform = "rotate(180deg)";
+                };
+
+                toggle = true;
+            } else {
+                KategoriaDIV.animate(fadeOut, { duration: 100 }).onfinish = () => {
+                    KategoriaDIV.style.display = "none";
+                };
+
+                navIcon.animate(roateOut, { duration: 100 }).onfinish = () => {
+                    navIcon.style.transform = "rotate(0deg)";
+                };
+
+                toggle = false;
+            }
+        }
+
+
+
+
+
+
+    </script>
 </body>
+
 </html>
