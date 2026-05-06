@@ -133,8 +133,10 @@ nav{
 }
 
 .keresoDiv{
-    background-color: red;
     width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .profbtDiv{
@@ -143,9 +145,45 @@ nav{
 }
 
 .kertesoInput{
-    width: 100px;
-    height: 40px;
-    background-color: purple;
+    height: 50px;
+    background-color: #2a313c;
+    padding: 0px;
+    width: 70%;
+    border: none;
+    border-radius: 100px 0px 0px 100px;
+    padding-left: 20px;
+    color: white;
+    font-size: 18px;
+   
+    border: 1px solid #3d444d;
+    border-right: none;
+
+}
+.kertesoInputBt{
+    height: 50px;
+   
+    background-color: #2a313c;
+    width: 50px;
+    border-radius: 0px 100px 100px 0px;
+    border: none;
+    border: 1px solid #3d444d;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 0.3s ease;
+   
+}
+.kertesoInputBt img{
+    width: 30px;
+    height: 37px;
+    margin-right: 3px;
+}
+.kertesoInputBt:hover{
+    background-color: #414b5c;
+    filter: drop-shadow(0px 3px 10px #5e5e5e80);
 }
 
-
+.kertesoInputBt:active{
+    background-color: #00a2ff;
+    filter: drop-shadow(0px 3px 10px #5e5e5e80);
+}
