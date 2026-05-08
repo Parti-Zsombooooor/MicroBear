@@ -111,9 +111,24 @@ nav{
     position: relative;
     border-bottom: 1px solid #3d444d;
     display: none;
-    
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.KategoriaDIV ul{
+    font-size: 17px;
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 30px;
+}
+.lifocim{
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: underline;
+}
 
 
 
@@ -127,10 +142,6 @@ nav{
     display: flex;
 }
 
-.nameDiv{
- background-color: brown;
- width: 20%;
-}
 
 .keresoDiv{
     width: 60%;
@@ -139,13 +150,9 @@ nav{
     justify-content: center;
 }
 
-.profbtDiv{
-    background-color: green;
-    width: 20%;
-}
 
 .kertesoInput{
-    height: 50px;
+    height: 48px;
     background-color: #2a313c;
     padding: 0px;
     width: 70%;
@@ -187,3 +194,68 @@ nav{
     background-color: #00a2ff;
     filter: drop-shadow(0px 3px 10px #5e5e5e80);
 }
+
+
+/* Felso Bal */
+
+.nameDiv{
+    display: flex;
+   
+    align-items: center;
+    width: 20%;
+}
+
+.nameDiv img{
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+    margin-left: 25px;
+}
+
+.nameDiv h1{
+    color: #ffffff;
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*iconok*/
+
+.profbIconDiv{
+    width: 50px;
+    height: 50px;
+    background-color: #2a313c;
+    border-radius: 100px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3d444d;
+    transition: all 0.3s ease;
+    
+}
+
+.profbtDiv{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: right;
+    
+}
+
+.profbIconDiv img{
+    width: 30px;
+    height: 30px;
+}
+
+.profbIconDiv:hover{
+    background-color: #414b5c;
+    filter: drop-shadow(0px 3px 10px #5e5e5e80);
+}
+.profbIconDiv:active{
+    background-color: #00a2ff;
+    filter: drop-shadow(0px 3px 10px #5e5e5e80);
+}
+
+
+
