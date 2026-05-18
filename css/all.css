@@ -14,6 +14,8 @@ nav{
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #3d444d;
+    z-index: 5;
+    position: absolute;
 }
 
 
@@ -113,6 +115,7 @@ nav{
     background-color: #151B23;
     position: absolute;
     border-bottom: 1px solid #3d444d;
+    margin-top: 135px;
     color: white;
     display: flex;
     align-items: center;
@@ -283,8 +286,8 @@ nav{
 .sidbar{
     background-color: #151B23;
     border-right: 1px solid #3d444d;
-    width: 400px;
-    height: 50%;
+    width: 300px;
+    height: 100%;
     float: left;
 }
 .main{
@@ -295,6 +298,6 @@ nav{
 
 .content{
     width: 100%;
-    height: 50%;
+    height: 100%;
     background-color: green;
 }
