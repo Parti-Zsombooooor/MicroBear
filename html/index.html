@@ -40,7 +40,8 @@
             </div>
             <div class="navAlso">
 
-                <button onclick="Lenyomva()" class="navKategoriaDropDownDiv">Kategória <img id="navIcon" class="navIcons"src="../imgs/icons/downarrow.svg" alt=""></button>
+                <button onclick="Lenyomva()" class="navKategoriaDropDownDiv">Kategória <img id="navIcon"
+                        class="navIcons" src="../imgs/icons/downarrow.svg" alt=""></button>
                 <a class="navA" href="">Főoldal</a>
                 <a class="navA" href="">Rólunk</a>
                 <a class="navA" href="">AKCIÓK!</a>
@@ -80,12 +81,20 @@
             </ul>
         </div>
         <div class="sidbar">
-            
-        </div>
-        <div class="content">
 
         </div>
-</div>
+        <div class="content">
+            <div style="height: 135px; width: 100%;"></div>
+
+            <div class="cardDiv">
+                <div class="cardImgDiv">
+                    <img class="cardImg" src="../imgs/placeholder.png" alt="">
+                </div>
+                <p class="cardName">Laci Kábele</p>
+                <p class="cardPrice">5000 ft</p>
+            </div>
+        </div>
+    </div>
     <script>
         let toggle = false;
 
@@ -99,14 +108,14 @@
         ];
 
         const roateIn = [
-            {rotate : '0deg'},
-            {rotate : '180deg'}
+            { rotate: '0deg' },
+            { rotate: '180deg' }
         ];
         const roateOut = [
-            {rotate : '180deg'},
-            {rotate : '0deg'}
+            { rotate: '180deg' },
+            { rotate: '0deg' }
         ];
-        
+
 
         const KategoriaDIV = document.getElementById("KategoriaDIV");
         const navIcon = document.getElementById("navIcon");
@@ -135,6 +144,8 @@
         }
 
 
+
+        let fat = document.createElement("div")
 
 
 
