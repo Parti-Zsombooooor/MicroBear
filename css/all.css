@@ -298,9 +298,14 @@ nav{
 
 .content{
     width: 100%;
-    height: 100%;   
+    height: 100%;          
+
 }
 
+.contentbox{
+    width: 100%;
+    height: 100%;
+}
 
 
 /* Card System*/

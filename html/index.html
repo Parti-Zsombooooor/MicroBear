@@ -83,17 +83,21 @@
         <div class="sidbar">
 
         </div>
+            
         <div class="content">
             <div style="height: 135px; width: 100%;"></div>
-
+            <div class="contentbox">
+<!-- 
             <div class="cardDiv">
                 <div class="cardImgDiv">
                     <img class="cardImg" src="../imgs/placeholder.png" alt="">
                 </div>
                 <p class="cardName">Laci Kábele</p>
                 <p class="cardPrice">5000 ft</p>
+            </div> -->
             </div>
         </div>
+        
     </div>
     <script>
         let toggle = false;
@@ -143,10 +147,26 @@
             }
         }
 
-
-
-        let fat = document.createElement("div")
-
+        for (let i = 0; i < 10; i++) {
+            let cardDiv = document.createElement("div")
+            cardDiv.classList.add("cardDiv");
+            let cardImgDiv = document.createElement("div");
+            cardImgDiv.classList.add("cardImgDiv");
+            cardDiv.appendChild(cardImgDiv);
+            let cardImg = document.createElement("img");
+            cardImg.classList.add("cardImg");
+            cardImg.src = "../imgs/placeholder.png";
+            cardImgDiv.appendChild(cardImg);
+            let cardName = document.createElement("p");
+            cardName.classList.add("cardName");
+            cardName.innerText = "Laci Kábele";
+            cardDiv.appendChild(cardName);
+            let cardPrice = document.createElement("p");
+            cardPrice.classList.add("cardPrice");
+            cardPrice.innerText = "5000 ft";
+            cardDiv.appendChild(cardPrice);
+            document.querySelector(".contentbox").appendChild(cardDiv);
+        }
 
 
 
